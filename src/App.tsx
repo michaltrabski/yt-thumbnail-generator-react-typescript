@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+import ImageBoard from "./compoments/ImageBoard";
+import Wrapper from "./compoments/Wrapper";
+import MyAppBar from "./compoments/MyAppBar";
 
 function App() {
+  const [ytId, setYtId] = useState("AbCTlemwZ1k");
+
+  const getYtIdFromUrl = (url: string) => {
+    return "AbCTlemwZ1k";
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MyAppBar ytId={ytId} />
+      <Wrapper ytId={ytId} />
+    </>
   );
 }
 
