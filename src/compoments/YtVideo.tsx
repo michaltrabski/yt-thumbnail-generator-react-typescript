@@ -82,8 +82,8 @@ const YtVideo = (props: Props) => {
   return (
     <>
       <iframe
-        width={1280 / 1}
-        height={720 / 1 + 200}
+        width={1280 / 2}
+        height={720 / 2 + 100}
         src={`https://www.youtube.com/embed/${props.ytId}?controls=1`}
         title="YouTube video player"
         frameBorder="0"

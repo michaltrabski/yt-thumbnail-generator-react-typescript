@@ -4,6 +4,8 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import YtVideo from "./YtVideo";
 
+import Text1 from "./Text1";
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -33,7 +35,9 @@ export default function Wrapper(props: Props) {
           </Paper>
         </Grid>
         <Grid item xs={6}>
-          <Paper className={classes.paper}></Paper>
+          <Paper className={classes.paper}>
+            <Text1 />
+          </Paper>
         </Grid>
         <Grid item xs={6}>
           <Paper className={classes.paper}>xs=6</Paper>
